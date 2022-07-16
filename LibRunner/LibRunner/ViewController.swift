@@ -12,7 +12,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        Wrapper.run(name: "Hello", x: 1, y: 2)
+        Wrapper.run(name: "Runner", x: 1, y: 2)
     }
 
 

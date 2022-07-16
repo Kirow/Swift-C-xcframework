@@ -19,6 +19,7 @@
 		29A6CA332882BA8800453543 /* echo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = echo.h; sourceTree = "<group>"; };
 		29A6CA342882BA8800453543 /* echo.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = echo.c; sourceTree = "<group>"; };
 		29A6CA372882BBEB00453543 /* Wrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wrapper.swift; sourceTree = "<group>"; };
+		29F39FD82882C33100A74C64 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +64,7 @@
 			children = (
 				29A6CA332882BA8800453543 /* echo.h */,
 				29A6CA342882BA8800453543 /* echo.c */,
+				29F39FD82882C33100A74C64 /* module.modulemap */,
 			);
 			path = src_c;
 			sourceTree = "<group>";
@@ -300,6 +302,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INCLUDE_PATHS = $SRCROOT/SwiftCLib/src_c;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -330,6 +333,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INCLUDE_PATHS = $SRCROOT/SwiftCLib/src_c;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

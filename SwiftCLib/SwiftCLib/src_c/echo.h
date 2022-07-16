@@ -9,6 +9,6 @@
 #define echo_h
 
 #include <stdio.h>
-void callCfunction(char name[], int x, int y);
+void callCfunction(const char* name, int x, int y);
 
 #endif /* echo_h */

@@ -8,6 +8,6 @@
 #include "echo.h"
 
 
-void callCfunction(char name[], int x, int y) {
+void callCfunction(const char* name, int x, int y) {
     printf("Hello, %s! %d + %d = %d", name, x, y, x + y);
 }

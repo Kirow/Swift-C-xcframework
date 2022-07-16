@@ -6,9 +6,10 @@
 //
 
 import Foundation
+import Echo
 
 public struct Wrapper {
     public static func run(name: String, x: Int, y: Int) {
-        print("Hello from swift")
+        callCfunction(name, 3, 4)
     }
 }

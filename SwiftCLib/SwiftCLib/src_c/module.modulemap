@@ -1,0 +1,4 @@
+module Echo {
+    header "echo.h"
+    export *
+}
