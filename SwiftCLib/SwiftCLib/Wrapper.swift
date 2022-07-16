@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import Echo
+import SwiftCLib.Echo
 
 public struct Wrapper {
     public static func run(name: String, x: Int, y: Int) {

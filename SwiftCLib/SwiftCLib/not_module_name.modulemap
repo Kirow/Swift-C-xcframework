@@ -1,0 +1,12 @@
+framework module SwiftCLib {
+  umbrella header "SwiftCLib.h"
+
+  export *
+  
+  module * { export * }
+  
+  explicit module Echo {
+      header "echo.h"
+      export *
+  }
+}
