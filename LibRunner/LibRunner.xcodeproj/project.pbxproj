@@ -13,18 +13,18 @@
 		29F39FC72882C1CE00A74C64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29F39FC52882C1CE00A74C64 /* Main.storyboard */; };
 		29F39FC92882C1CF00A74C64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29F39FC82882C1CF00A74C64 /* Assets.xcassets */; };
 		29F39FCC2882C1CF00A74C64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29F39FCA2882C1CF00A74C64 /* LaunchScreen.storyboard */; };
-		29F39FD52882C1DB00A74C64 /* SwiftCLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29F39FD42882C1DB00A74C64 /* SwiftCLib.framework */; };
-		29F39FD62882C1DB00A74C64 /* SwiftCLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 29F39FD42882C1DB00A74C64 /* SwiftCLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		29F39FDA2882C57D00A74C64 /* SwiftCLib.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29F39FD92882C57D00A74C64 /* SwiftCLib.xcframework */; };
+		29F39FDB2882C57D00A74C64 /* SwiftCLib.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 29F39FD92882C57D00A74C64 /* SwiftCLib.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		29F39FD72882C1DB00A74C64 /* Embed Frameworks */ = {
+		29F39FDC2882C57D00A74C64 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				29F39FD62882C1DB00A74C64 /* SwiftCLib.framework in Embed Frameworks */,
+				29F39FDB2882C57D00A74C64 /* SwiftCLib.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -40,7 +40,7 @@
 		29F39FC82882C1CF00A74C64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		29F39FCB2882C1CF00A74C64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		29F39FCD2882C1CF00A74C64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		29F39FD42882C1DB00A74C64 /* SwiftCLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftCLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		29F39FD92882C57D00A74C64 /* SwiftCLib.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SwiftCLib.xcframework; path = ../output/SwiftCLib.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29F39FD52882C1DB00A74C64 /* SwiftCLib.framework in Frameworks */,
+				29F39FDA2882C57D00A74C64 /* SwiftCLib.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,7 +89,7 @@
 		29F39FD32882C1DB00A74C64 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				29F39FD42882C1DB00A74C64 /* SwiftCLib.framework */,
+				29F39FD92882C57D00A74C64 /* SwiftCLib.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -104,7 +104,7 @@
 				29F39FB82882C1CE00A74C64 /* Sources */,
 				29F39FB92882C1CE00A74C64 /* Frameworks */,
 				29F39FBA2882C1CE00A74C64 /* Resources */,
-				29F39FD72882C1DB00A74C64 /* Embed Frameworks */,
+				29F39FDC2882C57D00A74C64 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
