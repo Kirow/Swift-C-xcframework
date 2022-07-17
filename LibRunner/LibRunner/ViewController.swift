@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import SwiftCLib
+import SwiftC
 
 class ViewController: UIViewController {
 

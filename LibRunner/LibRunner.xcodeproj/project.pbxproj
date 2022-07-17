@@ -7,14 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		298D1E8928843EEC006199DB /* SwiftC in Frameworks */ = {isa = PBXBuildFile; productRef = 298D1E8828843EEC006199DB /* SwiftC */; };
 		29F39FC02882C1CE00A74C64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F39FBF2882C1CE00A74C64 /* AppDelegate.swift */; };
 		29F39FC22882C1CE00A74C64 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F39FC12882C1CE00A74C64 /* SceneDelegate.swift */; };
 		29F39FC42882C1CE00A74C64 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F39FC32882C1CE00A74C64 /* ViewController.swift */; };
 		29F39FC72882C1CE00A74C64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29F39FC52882C1CE00A74C64 /* Main.storyboard */; };
 		29F39FC92882C1CF00A74C64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29F39FC82882C1CF00A74C64 /* Assets.xcassets */; };
 		29F39FCC2882C1CF00A74C64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29F39FCA2882C1CF00A74C64 /* LaunchScreen.storyboard */; };
-		29F39FDA2882C57D00A74C64 /* SwiftCLib.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29F39FD92882C57D00A74C64 /* SwiftCLib.xcframework */; };
-		29F39FDB2882C57D00A74C64 /* SwiftCLib.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 29F39FD92882C57D00A74C64 /* SwiftCLib.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +23,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				29F39FDB2882C57D00A74C64 /* SwiftCLib.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -32,6 +30,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		298D1E8728843EAA006199DB /* SwiftCPackage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SwiftCPackage; path = ../SwiftCPackage; sourceTree = "<group>"; };
 		29F39FBC2882C1CE00A74C64 /* LibRunner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LibRunner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29F39FBF2882C1CE00A74C64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29F39FC12882C1CE00A74C64 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,7 +39,6 @@
 		29F39FC82882C1CF00A74C64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		29F39FCB2882C1CF00A74C64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		29F39FCD2882C1CF00A74C64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		29F39FD92882C57D00A74C64 /* SwiftCLib.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SwiftCLib.xcframework; path = ../output/SwiftCLib.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,16 +46,25 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29F39FDA2882C57D00A74C64 /* SwiftCLib.xcframework in Frameworks */,
+				298D1E8928843EEC006199DB /* SwiftC in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		298D1E8628843EAA006199DB /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				298D1E8728843EAA006199DB /* SwiftCPackage */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
 		29F39FB32882C1CE00A74C64 = {
 			isa = PBXGroup;
 			children = (
+				298D1E8628843EAA006199DB /* Packages */,
 				29F39FBE2882C1CE00A74C64 /* LibRunner */,
 				29F39FBD2882C1CE00A74C64 /* Products */,
 				29F39FD32882C1DB00A74C64 /* Frameworks */,
@@ -89,7 +96,6 @@
 		29F39FD32882C1DB00A74C64 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				29F39FD92882C57D00A74C64 /* SwiftCLib.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -111,6 +117,9 @@
 			dependencies = (
 			);
 			name = LibRunner;
+			packageProductDependencies = (
+				298D1E8828843EEC006199DB /* SwiftC */,
+			);
 			productName = LibRunner;
 			productReference = 29F39FBC2882C1CE00A74C64 /* LibRunner.app */;
 			productType = "com.apple.product-type.application";
@@ -386,6 +395,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		298D1E8828843EEC006199DB /* SwiftC */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SwiftC;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 29F39FB42882C1CE00A74C64 /* Project object */;
 }
